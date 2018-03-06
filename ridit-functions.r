@@ -1,10 +1,10 @@
-# Convert vector of counts to ridits
+# Convert vector of counts (or proportions) to ridits
 
 to.ridit <- function(v) {
   (cumsum(v) - .5 * v) / sum(v)
 }
 
-# Calculate mean ridit for vector of counts relative to reference group
+# Calculate mean ridit for vector of counts (or proportions) relative to reference group
 
 mean.ridit <- function(v, ref) {
   sum(to.ridit(ref) * v ) / sum(v)
@@ -38,10 +38,10 @@ ridits.refgroup <- function(x, margin, ref=NULL) {
 }
 
 # Calculate mean ridits for several groups
-# x is matrix of counts
+# x is matrix of counts (or proportions)
 # margin is 1 for groups in rows, 2 for groups in columns
-# If ref is omitted, totals across groups are used as reference group
-# If ref is a vector of counts, it's used as reference group
+# If ref is omitted, totals across groups are used as reference group (results only meaningful if entries are counts)
+# If ref is a vector of counts (or proportions), it's used as reference group
 # Otherwise, ref is the number (or name if it exists) of the group to use as reference
 
 ridits <- function(x, margin, ref=NULL) {
@@ -50,6 +50,7 @@ ridits <- function(x, margin, ref=NULL) {
 
 # Calculate standard errors of mean ridits for several groups
 # Arguments are same as for ridits()
+# Results only meaningful if entries are counts
 
 ridits.se <- function(x, margin, ref=NULL) {
   apply(x, margin, se.ridit, ridits.refgroup(x,margin,ref))
