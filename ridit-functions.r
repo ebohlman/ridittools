@@ -13,7 +13,7 @@ mean.ridit <- function(v, ref) {
 # Calculate mean ridits for several groups
 # x is matrix of counts
 # margin is 1 for groups in rows, 2 for groups in columns
-# If ref is ommitted, totals across groups are used as reference group
+# If ref is omitted, totals across groups are used as reference group
 # If ref is a vector of counts, it's used as reference group
 # Otherwise, ref is the number of the group to use as reference
 
