@@ -15,7 +15,7 @@ mean.ridit <- function(v, ref) {
 # margin is 1 for groups in rows, 2 for groups in columns
 # If ref is omitted, totals across groups are used as reference group
 # If ref is a vector of counts, it's used as reference group
-# Otherwise, ref is the number of the group to use as reference
+# Otherwise, ref is the number (or name if it exists) of the group to use as reference
 
 ridits <- function(x, margin, ref=NULL) {
   if (length(ref) > 1) {
