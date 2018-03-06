@@ -10,14 +10,9 @@ mean.ridit <- function(v, ref) {
   sum(to.ridit(ref) * v ) / sum(v)
 }
 
-# Calculate mean ridits for several groups
-# x is matrix of counts
-# margin is 1 for groups in rows, 2 for groups in columns
-# If ref is omitted, totals across groups are used as reference group
-# If ref is a vector of counts, it's used as reference group
-# Otherwise, ref is the number (or name if it exists) of the group to use as reference
+# Utility to determine reference group
 
-ridits <- function(x, margin, ref=NULL) {
+ridits.refgroup <- function(x, margin, ref=NULL {
   if (length(ref) > 1) {
     refgroup <- ref
   } else if (length(ref) == 1) {
@@ -29,5 +24,15 @@ ridits <- function(x, margin, ref=NULL) {
   } else {
     refgroup <- apply(x, 3-margin, sum)
   }
-  apply(x, margin, mean.ridit, refgroup)
+}
+
+# Calculate mean ridits for several groups
+# x is matrix of counts
+# margin is 1 for groups in rows, 2 for groups in columns
+# If ref is omitted, totals across groups are used as reference group
+# If ref is a vector of counts, it's used as reference group
+# Otherwise, ref is the number (or name if it exists) of the group to use as reference
+
+ridits <- function(x, margin, ref=NULL) {
+  apply(x, margin, mean.ridit, ridits.refgroup(x,margin,ref))
 }
