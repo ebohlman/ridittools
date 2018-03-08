@@ -6,6 +6,7 @@ Compute ridit scores for group
 %%  ~~function to do ... ~~
 }
 \description{
+Computes the vector of ridit scores corresponding to a vector of counts or proportions.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

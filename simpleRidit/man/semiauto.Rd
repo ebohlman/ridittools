@@ -6,6 +6,8 @@ Favorability of semiautomatic weapons ban by party
 %%   ~~ data name/kind ... ~~
 }
 \description{
+Likert ratings of American favorability toward a ban on semi-automatic weapons, cross-tabulated by political party identification.
+
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("semiauto")}

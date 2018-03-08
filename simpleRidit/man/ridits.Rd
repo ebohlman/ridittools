@@ -6,6 +6,8 @@ Compute mean ridits of multiple groups
 %%  ~~function to do ... ~~
 }
 \description{
+Computes mean ridits of multiple groups in a crosstab matrix. Groups can be either rows or columns,
+with the other dimension representing the response categories.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -67,7 +69,7 @@ using group totals as reference will not give meaningful results if data are pro
 ## The function is currently defined as
 function (x, margin, ref = NULL)
 {
-    apply(x, margin, mean.ridit, ridits.refgroup(x, margin, ref))
+    apply(x, margin, meanridit, ridits.refgroup(x, margin, ref))
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

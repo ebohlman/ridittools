@@ -6,6 +6,7 @@ Compute standard errors of mean ridits of multiple groups
 %%  ~~function to do ... ~~
 }
 \description{
+Takes the same data as ridits(), bui returns standard errors rather than means.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

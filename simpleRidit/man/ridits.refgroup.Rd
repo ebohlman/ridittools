@@ -6,6 +6,7 @@ Utility to determine reference group
 %%  ~~function to do ... ~~
 }
 \description{
+For internal use.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

@@ -6,6 +6,8 @@ Compute standard error of mean ridit for group given reference group
 %%  ~~function to do ... ~~
 }
 \description{
+Given a vector of counts for a group and a vector of counts for a reference group, computes the
+standard error of the mean ridit for the group.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -14,11 +16,11 @@ se.ridit(v, ref)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{v}{
-  same as mean.ridit
+  same as meanridit(), but must be counts
 %%     ~~Describe \code{v} here~~
 }
   \item{ref}{
-  same as mean.ridit
+  same as meanridit()
 %%     ~~Describe \code{ref} here~~
 }
 }

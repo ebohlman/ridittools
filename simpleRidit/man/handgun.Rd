@@ -6,6 +6,7 @@ Favorability of handgun ban by party
 %%   ~~ data name/kind ... ~~
 }
 \description{
+Likert ratings of American favorability toward a handgun ban, cross-tabulated by political party identification.
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("handgun")}

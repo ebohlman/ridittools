@@ -29,7 +29,7 @@ Fleiss, J.,L., (1981), Statistical Methods for Rates and Proportions. New York: 
 ref <- acc[ , 1]
 to.ridit(ref)
 g <- acc[ , 2]
-mean.ridit(g, ref)
+meanridit(g, ref)
 se.ridit(g, ref)
 ridits(flu.age, 2, "H3")
 ridits(flu.age, 2) # Uses group totals as reference
