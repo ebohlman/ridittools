@@ -1,5 +1,5 @@
-\name{mean.ridit}
-\alias{mean.ridit}
+\name{meanridit}
+\alias{meanridit}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Compute mean ridit of group given reference group
@@ -9,7 +9,7 @@ Compute mean ridit of group given reference group
 Compute mean ridit for a group given a reference group
 }
 \usage{
-mean.ridit(v, ref)
+meanridit(v, ref)
 }
 \arguments{
   \item{v}{
