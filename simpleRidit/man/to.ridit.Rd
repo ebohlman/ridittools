@@ -47,9 +47,9 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+# PolitiFact ratings for Barack Obama in order of increasing truthfulness (8 Mar 2018)
+to.ridit(c(9, 71, 70, 161, 165, 123)) # counts
+to.ridit(c(.02, .12, .12, .27, .28, .21)) # proportions
 
 ## The function is currently defined as
 function (v)

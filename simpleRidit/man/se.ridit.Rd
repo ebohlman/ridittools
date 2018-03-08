@@ -53,9 +53,11 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+# PolitiFact ratings in order of increasing truthfulness (8 Mar 2018)
+obama <- c(9, 71, 70, 161, 165, 123)
+trump <- c(77, 169, 114, 78, 60, 24)
+# Result is approximately stamdard normal
+(meanridit(trump, obama) - 0.5) / se.ridit(trump, obama)
 
 ## The function is currently defined as
 function (v, ref)

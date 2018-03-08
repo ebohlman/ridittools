@@ -41,9 +41,11 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+# PolitiFact ratings in order of increasing truthfulness (8 Mar 2018)
+obama <- c(9, 71, 70, 161, 165, 123)
+trump <- c(77, 169, 114, 78, 60, 24)
+# Probability that a random Trump statement is more truthful than a random Obama statement
+meanridit(trump, obama)
 
 ## The function is currently defined as
 function (v, ref)

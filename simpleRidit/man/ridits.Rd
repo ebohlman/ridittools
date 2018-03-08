@@ -62,9 +62,10 @@ using group totals as reference will not give meaningful results if data are pro
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+ridits(flu.age, 2)
+ridits(flu.age, 2, "H3")
+ridits(handgun, 2, 1)
+ridits(handgun, 2, rowSums(handgun[ , 2:4]))
 
 ## The function is currently defined as
 function (x, margin, ref = NULL)

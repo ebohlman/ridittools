@@ -15,7 +15,7 @@ ridits.se(x, margin, ref = NULL)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-  same as for ridits()
+  same as for ridits(), but must be counts rather than proportions
 %%     ~~Describe \code{x} here~~
 }
   \item{margin}{
@@ -55,9 +55,7 @@ ridits
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+(ridits(semiauto, 2, 1) - 0.5) / ridits.se(semiauto, 2, 1)
 
 ## The function is currently defined as
 function (x, margin, ref = NULL)
