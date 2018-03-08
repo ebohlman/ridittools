@@ -11,8 +11,7 @@ First column is total injuries for all drivers; second is injuries to slightly i
 }
 \usage{data("acc")}
 \format{
-  The format is:
- num [1:7, 1:2] 17 54 60 19 9 6 14 5 10 16 ...
+7x2 matrix of counts
 }
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~

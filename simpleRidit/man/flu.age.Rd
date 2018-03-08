@@ -11,11 +11,7 @@ Cross-tabulation of influenza virus subtypes by age group
 }
 \usage{data("flu.age")}
 \format{
-  The format is:
- num [1:4, 1:5] 274 1504 1665 1476 91 ...
- - attr(*, "dimnames")=List of 2
-  ..$ : chr [1:4] "0-4" "5-24" "25-64" "65+"
-  ..$ : chr [1:5] "BY" "BV" "BU" "H3" ...
+4x5 matrix of counts; rows are age groups in increasing order, columns are viral subtypes
 }
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~

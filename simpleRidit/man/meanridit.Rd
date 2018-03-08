@@ -16,7 +16,7 @@ meanridit(v, ref)
 Vector of counts or proportions
 }
   \item{ref}{
-Vector of counts or propo0rtions to use as reference group
+Vector of counts or proportions to use as reference group
 }
 }
 \details{
@@ -44,7 +44,7 @@ Eric Bohlman
 # PolitiFact ratings in order of increasing truthfulness (8 Mar 2018)
 obama <- c(9, 71, 70, 161, 165, 123)
 trump <- c(77, 169, 114, 78, 60, 24)
-# Probability that a random Trump statement is more truthful than a random Obama statement
+# Probability that a random Trump statement is at least as truthful as a random Obama statement
 meanridit(trump, obama)
 
 ## The function is currently defined as

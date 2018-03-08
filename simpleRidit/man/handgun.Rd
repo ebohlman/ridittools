@@ -11,11 +11,8 @@ Likert ratings of American favorability toward a handgun ban, cross-tabulated by
 }
 \usage{data("handgun")}
 \format{
-  The format is:
- num [1:5, 1:4] 667 267 163 148 237 109 119 50 79 139 ...
- - attr(*, "dimnames")=List of 2
-  ..$ : chr [1:5] "OS" "O" "NS" "F" ...
-  ..$ : chr [1:4] "All" "Dem" "Ind" "Rep"
+5x4 matrix of counts; rows are ratings, first column is total responses,
+remaining columns are Democrats, independents, and Republicans.
 }
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~
@@ -28,6 +25,5 @@ Likert ratings of American favorability toward a handgun ban, cross-tabulated by
 }
 \examples{
 data(handgun)
-## maybe str(handgun) ; plot(handgun) ...
 }
 \keyword{datasets}
