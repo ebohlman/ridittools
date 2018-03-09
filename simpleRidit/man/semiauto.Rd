@@ -10,7 +10,7 @@ Likert ratings of American favorability toward a ban on semi-automatic weapons, 
 
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
-\usage{data("semiauto")}
+\usage{semiauto}
 \format{
 5x4 matrix of counts; rows are ratings, first column is total responses,
 remaining columns are Democrats, independents, and Republicans.
@@ -19,12 +19,13 @@ remaining columns are Democrats, independents, and Republicans.
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
 \source{
+YouGov poll of 1500 adult Americans, Feb. 25-27 2018
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
 }
 \references{
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(semiauto)
+semiauto
 }
 \keyword{datasets}

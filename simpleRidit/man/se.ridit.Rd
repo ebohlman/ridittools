@@ -16,11 +16,11 @@ se.ridit(v, ref)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{v}{
-  same as meanridit(), but must be counts
+  same as \code{meanridit()}, but must be counts
 %%     ~~Describe \code{v} here~~
 }
   \item{ref}{
-  same as meanridit(), but must be counts
+  same as \code{meanridit()}, but must be counts
 %%     ~~Describe \code{ref} here~~
 }
 }

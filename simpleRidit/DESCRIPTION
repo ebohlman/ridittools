@@ -2,13 +2,13 @@ Package: simpleRidit
 Type: Package
 Title: Useful Functions for Ridit Analysis
 Version: 0.1
-Date: 2018-03-07
+Date: 2018-03-08
 Author: Eric Bohlman
 Maintainer: Eric Bohlman <ericbohlman@gmail.com>
 Description: Functions to compute ridit scores of vectors, compute mean ridits
   and their standard errors for vectors compared to a reference vector,
   and compute means/SEs for multiple groups in matrices. Data can be either
   counts or proportions.
-License: GPL-2 | GPL-3 | MIT
+License: GPL-2 | GPL-3 | MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 6.0.1

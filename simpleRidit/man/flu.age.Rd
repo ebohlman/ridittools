@@ -9,7 +9,7 @@ Flu subtype by age group
 Cross-tabulation of influenza virus subtypes by age group
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
-\usage{data("flu.age")}
+\usage{flu.age}
 \format{
 4x5 matrix of counts; rows are age groups in increasing order, columns are viral subtypes
 }
@@ -17,13 +17,13 @@ Cross-tabulation of influenza virus subtypes by age group
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
 \source{
-http://cdc.gov/flu/weekly for week ending 24 Feb 2018
+\url{http://cdc.gov/flu/weekly} for week ending 24 Feb 2018
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
 }
 \references{
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(flu.age)
+flu.age
 }
 \keyword{datasets}

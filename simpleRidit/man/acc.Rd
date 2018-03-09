@@ -9,7 +9,7 @@ Vehicle accident injuries
 Counts of motor vehicle accident injuries; rows are ordered by increasing severity
 First column is total injuries for all drivers; second is injuries to slightly intoxicated drivers
 }
-\usage{data("acc")}
+\usage{acc}
 \format{
 7x2 matrix of counts
 }
@@ -23,6 +23,6 @@ Fleiss, pp. 152-153
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(acc)
+acc
 }
 \keyword{datasets}
