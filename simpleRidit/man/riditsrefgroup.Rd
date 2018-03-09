@@ -1,26 +1,26 @@
-\name{se.ridit}
-\alias{se.ridit}
+\name{riditsrefgroup}
+\alias{riditsrefgroup}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Compute standard error of mean ridit for group given reference group
+Utility to determine reference group
 %%  ~~function to do ... ~~
 }
 \description{
-Given a vector of counts for a group and a vector of counts for a reference group, computes the
-standard error of the mean ridit for the group.
+For internal use.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-se.ridit(v, ref)
+riditsrefgroup(x, margin, ref = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{v}{
-  same as \code{meanridit()}, but must be counts
-%%     ~~Describe \code{v} here~~
+  \item{x}{
+%%     ~~Describe \code{x} here~~
+}
+  \item{margin}{
+%%     ~~Describe \code{margin} here~~
 }
   \item{ref}{
-  same as \code{meanridit()}, but must be counts
 %%     ~~Describe \code{ref} here~~
 }
 }
@@ -28,7 +28,6 @@ se.ridit(v, ref)
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-standard error of mean ridit
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -36,7 +35,6 @@ standard error of mean ridit
 %% ...
 }
 \references{
-Fleiss, p. 154
 %% ~put references to the literature/web site here ~
 }
 \author{
@@ -53,21 +51,27 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-# PolitiFact ratings in order of increasing truthfulness (8 Mar 2018)
-obama <- c(9, 71, 70, 161, 165, 123)
-trump <- c(77, 169, 114, 78, 60, 24)
-# Result is approximately standard normal
-(meanridit(trump, obama) - 0.5) / se.ridit(trump, obama)
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (v, ref)
+function (x, margin, ref = NULL)
 {
-    N <- sum(ref)
-    n <- sum(v)
-    term1 <- (n + 1)/N
-    term2 <- 1/(N * (N + n - 1))
-    term3 <- sum((ref + v)^3)/(N * (N + n) * (N + n - 1))
-    (1/(2 * sqrt(3 * n))) * sqrt(1 + term1 + term2 - term3)
+    if (length(ref) > 1) {
+        refgroup <- ref
+    }
+    else if (length(ref) == 1) {
+        if (margin == 1) {
+            refgroup <- x[ref, ]
+        }
+        else {
+            refgroup <- x[, ref]
+        }
+    }
+    else {
+        refgroup <- apply(x, 3 - margin, sum)
+    }
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

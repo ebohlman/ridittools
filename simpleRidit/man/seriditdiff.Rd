@@ -1,5 +1,5 @@
-\name{se.riditdiff}
-\alias{se.riditdiff}
+\name{seritdiff}
+\alias{seriditdiff}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Compute standard error of difference between two mean ridits
@@ -11,7 +11,7 @@ two groups. This does not depend on the reference group the mean ridits are rela
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-se.riditdiff(g1, g2)
+seriditdiff(g1, g2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -54,7 +54,7 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-se.riditdiff(semiauto[ , "Ind"], semiauto[ , "Rep"])
+seriditdiff(semiauto[ , "Ind"], semiauto[ , "Rep"])
 
 ## The function is currently defined as
 function(g1, g2) {

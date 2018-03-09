@@ -1,33 +1,29 @@
-\name{ridits.refgroup}
-\alias{ridits.refgroup}
+\name{toridit}
+\alias{toridit}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Utility to determine reference group
+Compute ridit scores for group
 %%  ~~function to do ... ~~
 }
 \description{
-For internal use.
+Computes the vector of ridit scores corresponding to a vector of counts or proportions.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-ridits.refgroup(x, margin, ref = NULL)
+toridit(v)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
-%%     ~~Describe \code{x} here~~
-}
-  \item{margin}{
-%%     ~~Describe \code{margin} here~~
-}
-  \item{ref}{
-%%     ~~Describe \code{ref} here~~
+  \item{v}{
+  vector of counts or proportions
+%%     ~~Describe \code{v} here~~
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
+vector of ridit scores
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -51,27 +47,14 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+# PolitiFact ratings for Barack Obama in order of increasing truthfulness (8 Mar 2018)
+toridit(c(9, 71, 70, 161, 165, 123)) # counts
+toridit(c(.02, .12, .12, .27, .28, .21)) # proportions
 
 ## The function is currently defined as
-function (x, margin, ref = NULL)
+function (v)
 {
-    if (length(ref) > 1) {
-        refgroup <- ref
-    }
-    else if (length(ref) == 1) {
-        if (margin == 1) {
-            refgroup <- x[ref, ]
-        }
-        else {
-            refgroup <- x[, ref]
-        }
-    }
-    else {
-        refgroup <- apply(x, 3 - margin, sum)
-    }
+    (cumsum(v) - 0.5 * v)/sum(v)
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

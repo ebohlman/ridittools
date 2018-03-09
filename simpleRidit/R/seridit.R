@@ -1,4 +1,4 @@
-se.ridit <-
+seridit <-
 function(v, ref) {
   N <- sum(ref)
   n <- sum(v)

@@ -1,5 +1,5 @@
-\name{ridits.se}
-\alias{ridits.se}
+\name{riditsse}
+\alias{riditsse}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Compute standard errors of mean ridits of multiple groups
@@ -10,7 +10,7 @@ Takes the same data as \code{ridits()}, bui returns standard errors rather than 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-ridits.se(x, margin, ref = NULL)
+riditsse(x, margin, ref = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -56,12 +56,12 @@ Eric Bohlman
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-(ridits(semiauto, 2, 1) - 0.5) / ridits.se(semiauto, 2, 1)
+(ridits(semiauto, 2, 1) - 0.5) / riditsse(semiauto, 2, 1)
 
 ## The function is currently defined as
 function (x, margin, ref = NULL)
 {
-    apply(x, margin, se.ridit, ridits.refgroup(x, margin, ref))
+    apply(x, margin, se.ridit, riditsrefgroup(x, margin, ref))
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

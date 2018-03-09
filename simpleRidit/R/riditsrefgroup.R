@@ -1,4 +1,4 @@
-ridits.refgroup <-
+riditsrefgroup <-
 function(x, margin, ref=NULL) {
   if (length(ref) > 1) {
     refgroup <- ref

@@ -70,7 +70,7 @@ ridits(handgun, 2, rowSums(handgun[ , 2:4]))
 ## The function is currently defined as
 function (x, margin, ref = NULL)
 {
-    apply(x, margin, meanridit, ridits.refgroup(x, margin, ref))
+    apply(x, margin, meanridit, riditsrefgroup(x, margin, ref))
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
