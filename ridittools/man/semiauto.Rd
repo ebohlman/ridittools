@@ -16,14 +16,13 @@ Likert ratings of American favorability toward a ban on semi-automatic weapons, 
 remaining columns are Democrats, independents, and Republicans.
 }
 \details{
+These data were originally specified as proportions and were derived by multiplication by
+sample sizes. As such, the first column slightly differs, due to rounding error, from the row sums of the remaining columns.
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
 \source{
 YouGov poll of 1500 adult Americans, Feb. 25-27 2018
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
 semiauto
