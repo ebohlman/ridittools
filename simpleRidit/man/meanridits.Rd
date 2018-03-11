@@ -1,5 +1,5 @@
-\name{ridits}
-\alias{ridits}
+\name{meanridits}
+\alias{meanridits}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Compute mean ridits of multiple groups
@@ -11,7 +11,7 @@ with the other dimension representing the response categories.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-ridits(x, margin, ref = NULL)
+meanridits(x, margin, ref = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -62,10 +62,10 @@ using group totals as reference will not give meaningful results if data are pro
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-ridits(flu.age, 2)
-ridits(flu.age, 2, "H3")
-ridits(handgun, 2, 1)
-ridits(handgun, 2, rowSums(handgun[ , 2:4]))
+meanridits(flu.age, 2)
+meanridits(flu.age, 2, "H3")
+meanridits(handgun, 2, 1)
+meanridits(handgun, 2, rowSums(handgun[ , 2:4]))
 
 ## The function is currently defined as
 function (x, margin, ref = NULL)

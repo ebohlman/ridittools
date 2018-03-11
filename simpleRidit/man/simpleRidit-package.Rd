@@ -31,7 +31,7 @@ toridit(ref)
 g <- acc[ , 2]
 meanridit(g, ref)
 seridit(g, ref)
-ridits(flu.age, 2, "H3")
-ridits(flu.age, 2) # Uses group totals as reference
-riditsse(handgun, 2, 1)
+meanridits(flu.age, 2, "H3")
+meanridits(flu.age, 2) # Uses group totals as reference
+seridits(handgun, 2, 1)
 }
