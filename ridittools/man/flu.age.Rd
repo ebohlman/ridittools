@@ -13,15 +13,9 @@ Cross-tabulation of influenza virus subtypes by age group
 \format{
 4x5 matrix of counts; rows are age groups in increasing order, columns are viral subtypes
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
 \source{
 \url{http://cdc.gov/flu/weekly} for week ending 24 Feb 2018
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
 flu.age

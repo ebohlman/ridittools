@@ -19,9 +19,9 @@ toridit(v)
 %%     ~~Describe \code{v} here~~
 }
 }
-\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%%}
 \value{
 vector of ridit scores
 %%  ~Describe the value returned
@@ -31,21 +31,22 @@ vector of ridit scores
 %% ...
 }
 \references{
+Fleiss, J.,L., (1981), Statistical Methods for Rates and Proportions. New York: John Wiley & Sons, p. 152
 %% ~put references to the literature/web site here ~
 }
 \author{
 Eric Bohlman
 %%  ~~who you are~~
 }
-\note{
+%%\note{
 %%  ~~further notes~~
-}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%%}
 \examples{
 # PolitiFact ratings for Barack Obama in order of increasing truthfulness (8 Mar 2018)
 toridit(c(9, 71, 70, 161, 165, 123)) # counts

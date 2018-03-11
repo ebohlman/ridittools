@@ -23,8 +23,8 @@ Maintainer: \packageMaintainer{ridittools}
 Fleiss, J.,L., (1981), Statistical Methods for Rates and Proportions. New York: John Wiley & Sons.
 }
 \keyword{ package }
-\seealso{
-}
+%%\seealso{
+%%}
 \examples{
 ref <- acc[ , 1]
 toridit(ref)

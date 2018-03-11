@@ -2,7 +2,7 @@
 \alias{riditsrefgroup}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Utility to determine reference group
+Utility to determine reference group. Primarily for internal use/
 %%  ~~function to do ... ~~
 }
 \description{
@@ -15,46 +15,38 @@ riditsrefgroup(x, margin, ref = NULL)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
+  matrix of counts or proportions
 %%     ~~Describe \code{x} here~~
 }
   \item{margin}{
+  margin that represents groups. 1 for rows, 2 for columns
 %%     ~~Describe \code{margin} here~~
 }
   \item{ref}{
+  group to use as reference. if omitted, use totals across groups. if a vector, use it. otherwise
+  use the group with its number (or name if available)
 %%     ~~Describe \code{ref} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
+vector of counts/proportions to use as reference group
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
 \author{
 Eric Bohlman
 %%  ~~who you are~~
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%%}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
 ## The function is currently defined as
 function (x, margin, ref = NULL)
 {

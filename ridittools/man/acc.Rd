@@ -13,14 +13,8 @@ First column is total injuries for all drivers; second is injuries to slightly i
 \format{
 7x2 matrix of counts
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
 \source{
 Fleiss, pp. 152-153
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
 acc

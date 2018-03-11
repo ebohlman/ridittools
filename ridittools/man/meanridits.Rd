@@ -33,9 +33,9 @@ meanridits(x, margin, ref = NULL)
 %%     ~~Describe \code{ref} here~~
 }
 }
-\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%%}
 \value{
 vector of mean ridits
 %%  ~Describe the value returned
@@ -43,9 +43,6 @@ vector of mean ridits
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-}
-\references{
-%% ~put references to the literature/web site here ~
 }
 \author{
 Eric Bohlman
@@ -58,9 +55,9 @@ using group totals as reference will not give meaningful results if data are pro
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%%}
 \examples{
 meanridits(flu.age, 2)
 meanridits(flu.age, 2, "H3")

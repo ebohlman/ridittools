@@ -40,21 +40,18 @@ a vector of standard errors for each group's mean ridits
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
 \author{
 Eric Bohlman
 %%  ~~who you are~~
 }
-\note{
+%%\note{
 %%  ~~further notes~~
-}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{meanridits()}
+\code{\link{meanridits}}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{

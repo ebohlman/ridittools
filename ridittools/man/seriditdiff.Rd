@@ -37,22 +37,22 @@ approximate standard error of difference between mean ridits
 %% ...
 }
 \references{
-Fleiss, p. 155
+Fleiss, J.,L., (1981), Statistical Methods for Rates and Proportions. New York: John Wiley & Sons., p. 155
 %% ~put references to the literature/web site here ~
 }
 \author{
 Eric Bohlman
 %%  ~~who you are~~
 }
-\note{
+%%\note{
 %%  ~~further notes~~
-}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%%}
 \examples{
 seriditdiff(semiauto[ , "Ind"], semiauto[ , "Rep"])
 
