@@ -20,7 +20,7 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{ridittools}
 }
 \references{
-Fleiss, J.,L., (1981), Statistical Methods for Rates and Proportions. New York: John Wiley & Sons.
+Fleiss, Joseph L., (1981), Statistical Methods for Rates and Proportions. New York: John Wiley & Sons.
 }
 \keyword{ package }
 %%\seealso{
